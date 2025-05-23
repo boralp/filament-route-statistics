@@ -9,9 +9,9 @@
         "statistics"
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^8.2",
         "filament/filament": "^3.0-stable",
-        "bilfeldt/laravel-route-statistics": "^3.0",
+        "bilfeldt/laravel-route-statistics": "^4.0",
         "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
