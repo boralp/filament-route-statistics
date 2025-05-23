@@ -22,7 +22,7 @@ class RouteStatistics extends Page implements HasTable
 
     protected static string $view = 'filament-route-statistics::pages.route-statistics';
 
-    protected static ?string $navigationGroup = 'Statistics';
+    protected static ?string $navigationGroup = null;
 
     protected static string $userName = 'email';
 
@@ -36,6 +36,16 @@ class RouteStatistics extends Page implements HasTable
 
     protected static string $sortDirection = 'desc';
 
+    public static function getModelLabel(): string
+    {
+        return __('filament.statistic');
+    }
+
+    public static function getPluralModelLabel(): string
+    {
+        return __('filament.statistics');
+    }
+    
     public static function getUserName(): string
     {
         return static::$userName;
